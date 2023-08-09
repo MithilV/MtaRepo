@@ -1,0 +1,490 @@
+2023-08-09 14:30:58,485 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 14:31:11,057 - INFO - Line W is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line 5 is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line 2 is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line A is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line 7 is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line 4 is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line N is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line SI is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line D is now recovered delays
+2023-08-09 14:31:11,057 - INFO - Line Z is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line G is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line 1 is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line R is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line 6 is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line B is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line GS is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line E is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line C is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line Q is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line FS is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line J is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line H is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line M is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line 3 is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line F is now recovered delays
+2023-08-09 14:31:11,062 - INFO - Line L is now recovered delays
+2023-08-09 14:31:45,333 - ERROR - Exception on /status/A [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 106, in getStatus
+    return "Line is Delayed " + (lineName in delaySet)
+TypeError: can only concatenate str (not "bool") to str
+2023-08-09 14:31:45,340 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:45] "[35m[1mGET /status/A HTTP/1.1[0m" 500 -
+2023-08-09 14:31:46,059 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:46] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 14:31:47,042 - ERROR - Exception on /status/A [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 106, in getStatus
+    return "Line is Delayed " + (lineName in delaySet)
+TypeError: can only concatenate str (not "bool") to str
+2023-08-09 14:31:47,055 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:47] "[35m[1mGET /status/A HTTP/1.1[0m" 500 -
+2023-08-09 14:31:47,369 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:47] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 14:31:48,161 - ERROR - Exception on /status/A [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 106, in getStatus
+    return "Line is Delayed " + (lineName in delaySet)
+TypeError: can only concatenate str (not "bool") to str
+2023-08-09 14:31:48,173 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:48] "[35m[1mGET /status/A HTTP/1.1[0m" 500 -
+2023-08-09 14:31:48,486 - INFO - 127.0.0.1 - - [09/Aug/2023 14:31:48] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 14:33:47,743 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 14:33:58,442 - INFO - Line W is now recovered delays
+2023-08-09 14:33:58,443 - INFO - Line 5 is now recovered delays
+2023-08-09 14:33:58,443 - INFO - Line 2 is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line 7 is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line A is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line N is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line 4 is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line SI is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line D is now recovered delays
+2023-08-09 14:33:58,444 - INFO - Line Z is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line M is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line B is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line C is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line J is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line FS is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line GS is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line E is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line 6 is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line Q is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line 1 is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line 3 is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line F is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line G is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line R is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line L is now recovered delays
+2023-08-09 14:33:58,448 - INFO - Line H is now recovered delays
+2023-08-09 14:34:31,100 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:31] "GET /status/A HTTP/1.1" 200 -
+2023-08-09 14:34:31,543 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:31] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 14:34:38,349 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:38] "GET /status/A HTTP/1.1" 200 -
+2023-08-09 14:34:38,734 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:38] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 14:34:44,266 - ERROR - Exception on /uptime/A [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 111, in user_profile
+    return "Line has not been delayed for: " + str(1 - (delaySet[lineName] / (time.time() - start_time)))
+KeyError: 'A'
+2023-08-09 14:34:44,288 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:44] "[35m[1mGET /uptime/A HTTP/1.1[0m" 500 -
+2023-08-09 14:34:44,678 - INFO - 127.0.0.1 - - [09/Aug/2023 14:34:44] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 15:58:55,258 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 15:59:07,456 - INFO - Line F is experiencing delays
+2023-08-09 15:59:07,470 - INFO - Line 5 is experiencing delays
+2023-08-09 15:59:07,477 - INFO - Line 6 is experiencing delays
+2023-08-09 15:59:07,507 - INFO - Line 4 is experiencing delays
+2023-08-09 15:59:07,514 - INFO - Line E is experiencing delays
+2023-08-09 15:59:07,583 - INFO - Line 2 is experiencing delays
+2023-08-09 15:59:07,721 - INFO - Line 3 is experiencing delays
+2023-08-09 15:59:07,721 - INFO - Line B is now recovered delays
+2023-08-09 15:59:07,721 - INFO - Line L is now recovered delays
+2023-08-09 15:59:07,721 - INFO - Line Z is now recovered delays
+2023-08-09 15:59:07,721 - INFO - Line 7 is now recovered delays
+2023-08-09 15:59:07,721 - INFO - Line A is now recovered delays
+2023-08-09 15:59:07,796 - INFO - Line D is now recovered delays
+2023-08-09 15:59:07,796 - INFO - Line J is now recovered delays
+2023-08-09 15:59:07,796 - INFO - Line N is now recovered delays
+2023-08-09 15:59:07,800 - INFO - Line G is now recovered delays
+2023-08-09 15:59:07,800 - INFO - Line W is now recovered delays
+2023-08-09 15:59:07,800 - INFO - Line Q is now recovered delays
+2023-08-09 15:59:07,801 - INFO - Line 1 is now recovered delays
+2023-08-09 15:59:07,801 - INFO - Line H is now recovered delays
+2023-08-09 15:59:07,801 - INFO - Line C is now recovered delays
+2023-08-09 15:59:07,837 - INFO - Line SI is now recovered delays
+2023-08-09 15:59:07,868 - INFO - Line R is now recovered delays
+2023-08-09 15:59:07,875 - INFO - Line FS is now recovered delays
+2023-08-09 15:59:07,893 - INFO - Line M is now recovered delays
+2023-08-09 15:59:07,893 - INFO - Line GS is now recovered delays
+2023-08-09 16:00:19,726 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:19] "GET /uptime/A HTTP/1.1" 200 -
+2023-08-09 16:00:20,796 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:20] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:00:25,089 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:25] "GET /uptime/B HTTP/1.1" 200 -
+2023-08-09 16:00:25,603 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:25] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:00:28,731 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:28] "GET /uptime/C HTTP/1.1" 200 -
+2023-08-09 16:00:29,446 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:29] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:00:33,168 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:33] "GET /uptime/D HTTP/1.1" 200 -
+2023-08-09 16:00:33,801 - INFO - 127.0.0.1 - - [09/Aug/2023 16:00:33] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:04:13,310 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:04:25,688 - INFO - Line 5 is experiencing delays
+2023-08-09 16:04:25,714 - INFO - Line 4 is experiencing delays
+2023-08-09 16:04:25,733 - INFO - Line 2 is experiencing delays
+2023-08-09 16:04:25,771 - INFO - Line F is experiencing delays
+2023-08-09 16:04:25,802 - INFO - Line 3 is experiencing delays
+2023-08-09 16:04:25,877 - INFO - Line E is experiencing delays
+2023-08-09 16:04:25,971 - INFO - Line 6 is experiencing delays
+2023-08-09 16:04:25,978 - INFO - Line B is now recovered delays
+2023-08-09 16:04:25,978 - INFO - Line L is now recovered delays
+2023-08-09 16:04:25,978 - INFO - Line D is now recovered delays
+2023-08-09 16:04:25,978 - INFO - Line 7 is now recovered delays
+2023-08-09 16:04:25,978 - INFO - Line J is now recovered delays
+2023-08-09 16:04:26,003 - INFO - Line Z is now recovered delays
+2023-08-09 16:04:26,109 - INFO - Line N is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line FS is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line G is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line GS is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line C is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line 1 is now recovered delays
+2023-08-09 16:04:26,113 - INFO - Line M is now recovered delays
+2023-08-09 16:04:26,145 - INFO - Line R is now recovered delays
+2023-08-09 16:04:26,145 - INFO - Line W is now recovered delays
+2023-08-09 16:04:26,189 - INFO - Line SI is now recovered delays
+2023-08-09 16:04:26,189 - INFO - Line H is now recovered delays
+2023-08-09 16:04:26,189 - INFO - Line Q is now recovered delays
+2023-08-09 16:04:26,189 - INFO - Line A is now recovered delays
+2023-08-09 16:05:31,510 - INFO - Line 5 is now recovered delays
+2023-08-09 16:05:31,617 - INFO - Line 4 is now recovered delays
+2023-08-09 16:05:32,639 - ERROR - Exception on /uptime/F [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 117, in user_profile
+    return "Line has not been delayed for " + str((1 - (delaySet[lineName] / (time.time() - start_time))) * 100 + "% of the time")
+TypeError: unsupported operand type(s) for +: 'float' and 'str'
+2023-08-09 16:05:33,170 - INFO - 127.0.0.1 - - [09/Aug/2023 16:05:33] "[35m[1mGET /uptime/F HTTP/1.1[0m" 500 -
+2023-08-09 16:05:34,100 - INFO - 127.0.0.1 - - [09/Aug/2023 16:05:34] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:10:09,319 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:10:21,637 - INFO - Line 6 is experiencing delays
+2023-08-09 16:10:21,651 - INFO - Line 3 is experiencing delays
+2023-08-09 16:10:21,683 - INFO - Line 2 is experiencing delays
+2023-08-09 16:10:21,695 - INFO - Line F is experiencing delays
+2023-08-09 16:10:21,752 - INFO - Line E is experiencing delays
+2023-08-09 16:10:21,790 - INFO - Line B is now recovered delays
+2023-08-09 16:10:21,932 - INFO - Line 4 is now recovered delays
+2023-08-09 16:10:21,933 - INFO - Line 5 is now recovered delays
+2023-08-09 16:10:21,978 - INFO - Line L is now recovered delays
+2023-08-09 16:10:21,980 - INFO - Line J is now recovered delays
+2023-08-09 16:10:21,993 - INFO - Line 7 is now recovered delays
+2023-08-09 16:10:22,018 - INFO - Line Z is now recovered delays
+2023-08-09 16:10:22,018 - INFO - Line D is now recovered delays
+2023-08-09 16:10:22,018 - INFO - Line N is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line GS is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line G is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line M is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line Q is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line SI is now recovered delays
+2023-08-09 16:10:22,023 - INFO - Line FS is now recovered delays
+2023-08-09 16:10:22,073 - INFO - Line W is now recovered delays
+2023-08-09 16:10:22,073 - INFO - Line A is now recovered delays
+2023-08-09 16:10:22,073 - INFO - Line H is now recovered delays
+2023-08-09 16:10:22,085 - INFO - Line C is now recovered delays
+2023-08-09 16:10:22,086 - INFO - Line 1 is now recovered delays
+2023-08-09 16:10:22,086 - INFO - Line R is now recovered delays
+2023-08-09 16:10:40,505 - INFO - Line 5 is experiencing delays
+2023-08-09 16:11:55,937 - ERROR - Exception on /uptime/F [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 118, in user_profile
+    return "Line has not been delayed for " + (1 - (delaySet[lineName] / (time.time() - start_time))) * 100 + "% of the time"
+TypeError: can only concatenate str (not "float") to str
+2023-08-09 16:11:56,313 - INFO - 127.0.0.1 - - [09/Aug/2023 16:11:56] "[35m[1mGET /uptime/F HTTP/1.1[0m" 500 -
+2023-08-09 16:11:56,956 - INFO - 127.0.0.1 - - [09/Aug/2023 16:11:56] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:11:57,492 - ERROR - Exception on /uptime/F [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 118, in user_profile
+    return "Line has not been delayed for " + (1 - (delaySet[lineName] / (time.time() - start_time))) * 100 + "% of the time"
+TypeError: can only concatenate str (not "float") to str
+2023-08-09 16:11:57,597 - INFO - 127.0.0.1 - - [09/Aug/2023 16:11:57] "[35m[1mGET /uptime/F HTTP/1.1[0m" 500 -
+2023-08-09 16:11:58,000 - INFO - 127.0.0.1 - - [09/Aug/2023 16:11:58] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:17:27,630 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:17:39,071 - INFO - Line 2 is experiencing delays
+2023-08-09 16:17:39,091 - INFO - Line 5 is experiencing delays
+2023-08-09 16:17:39,109 - INFO - Line E is experiencing delays
+2023-08-09 16:17:39,122 - INFO - Line F is experiencing delays
+2023-08-09 16:17:39,122 - INFO - Line B is now recovered delays
+2023-08-09 16:17:39,122 - INFO - Line 4 is now recovered delays
+2023-08-09 16:17:39,122 - INFO - Line L is now recovered delays
+2023-08-09 16:17:39,122 - INFO - Line Z is now recovered delays
+2023-08-09 16:17:39,122 - INFO - Line 7 is now recovered delays
+2023-08-09 16:17:39,122 - INFO - Line J is now recovered delays
+2023-08-09 16:17:39,147 - INFO - Line D is now recovered delays
+2023-08-09 16:17:39,147 - INFO - Line N is now recovered delays
+2023-08-09 16:17:39,151 - INFO - Line G is now recovered delays
+2023-08-09 16:17:39,151 - INFO - Line FS is now recovered delays
+2023-08-09 16:17:39,152 - INFO - Line 3 is now recovered delays
+2023-08-09 16:17:39,170 - INFO - Line C is now recovered delays
+2023-08-09 16:17:39,170 - INFO - Line M is now recovered delays
+2023-08-09 16:17:39,189 - INFO - Line Q is now recovered delays
+2023-08-09 16:17:39,189 - INFO - Line R is now recovered delays
+2023-08-09 16:17:39,220 - INFO - Line H is now recovered delays
+2023-08-09 16:17:39,221 - INFO - Line 6 is now recovered delays
+2023-08-09 16:17:39,221 - INFO - Line 1 is now recovered delays
+2023-08-09 16:17:39,221 - INFO - Line A is now recovered delays
+2023-08-09 16:17:39,246 - INFO - Line SI is now recovered delays
+2023-08-09 16:17:39,270 - INFO - Line GS is now recovered delays
+2023-08-09 16:17:39,276 - INFO - Line W is now recovered delays
+2023-08-09 16:18:59,288 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:19:11,175 - INFO - Line 2 is experiencing delays
+2023-08-09 16:19:11,189 - INFO - Line E is experiencing delays
+2023-08-09 16:19:11,214 - INFO - Line F is experiencing delays
+2023-08-09 16:19:11,239 - INFO - Line 5 is experiencing delays
+2023-08-09 16:19:11,239 - INFO - Line B is now recovered delays
+2023-08-09 16:19:11,239 - INFO - Line 4 is now recovered delays
+2023-08-09 16:19:11,239 - INFO - Line L is now recovered delays
+2023-08-09 16:19:11,239 - INFO - Line J is now recovered delays
+2023-08-09 16:19:11,239 - INFO - Line D is now recovered delays
+2023-08-09 16:19:11,239 - INFO - Line Z is now recovered delays
+2023-08-09 16:19:11,240 - INFO - Line 7 is now recovered delays
+2023-08-09 16:19:11,240 - INFO - Line N is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line R is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line SI is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line GS is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line A is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line 6 is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line FS is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line Q is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line H is now recovered delays
+2023-08-09 16:19:11,244 - INFO - Line W is now recovered delays
+2023-08-09 16:19:11,269 - INFO - Line C is now recovered delays
+2023-08-09 16:19:11,269 - INFO - Line M is now recovered delays
+2023-08-09 16:19:11,269 - INFO - Line 3 is now recovered delays
+2023-08-09 16:19:11,269 - INFO - Line G is now recovered delays
+2023-08-09 16:19:11,300 - INFO - Line 1 is now recovered delays
+2023-08-09 16:21:41,698 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:21:52,712 - INFO - Line F is experiencing delays
+2023-08-09 16:21:52,737 - INFO - Line 2 is experiencing delays
+2023-08-09 16:21:52,743 - INFO - Line 5 is experiencing delays
+2023-08-09 16:21:52,800 - INFO - Line E is experiencing delays
+2023-08-09 16:21:52,800 - INFO - Line B is now recovered delays
+2023-08-09 16:21:52,800 - INFO - Line L is now recovered delays
+2023-08-09 16:21:52,800 - INFO - Line 4 is now recovered delays
+2023-08-09 16:21:52,800 - INFO - Line J is now recovered delays
+2023-08-09 16:21:52,800 - INFO - Line Z is now recovered delays
+2023-08-09 16:21:52,800 - INFO - Line D is now recovered delays
+2023-08-09 16:21:52,843 - INFO - Line 7 is now recovered delays
+2023-08-09 16:21:52,843 - INFO - Line N is now recovered delays
+2023-08-09 16:21:52,848 - INFO - Line GS is now recovered delays
+2023-08-09 16:21:52,848 - INFO - Line C is now recovered delays
+2023-08-09 16:21:52,848 - INFO - Line M is now recovered delays
+2023-08-09 16:21:52,873 - INFO - Line 6 is now recovered delays
+2023-08-09 16:21:52,873 - INFO - Line FS is now recovered delays
+2023-08-09 16:21:52,873 - INFO - Line R is now recovered delays
+2023-08-09 16:21:52,885 - INFO - Line W is now recovered delays
+2023-08-09 16:21:52,910 - INFO - Line H is now recovered delays
+2023-08-09 16:21:52,929 - INFO - Line 1 is now recovered delays
+2023-08-09 16:21:52,954 - INFO - Line 3 is now recovered delays
+2023-08-09 16:21:52,978 - INFO - Line G is now recovered delays
+2023-08-09 16:21:52,978 - INFO - Line Q is now recovered delays
+2023-08-09 16:21:52,978 - INFO - Line A is now recovered delays
+2023-08-09 16:21:52,997 - INFO - Line SI is now recovered delays
+2023-08-09 16:22:42,228 - INFO - Line F is now recovered delays
+2023-08-09 16:22:42,228 - INFO - Line E is now recovered delays
+2023-08-09 16:25:43,421 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:26:00,508 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:26:11,005 - INFO - Line B is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line 4 is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line L is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line 5 is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line J is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line Z is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line 7 is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line D is now recovered delays
+2023-08-09 16:26:11,005 - INFO - Line N is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line C is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line R is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line SI is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line A is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line F is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line 6 is now recovered delays
+2023-08-09 16:26:11,009 - INFO - Line Q is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line FS is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line 1 is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line 3 is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line GS is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line E is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line 2 is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line G is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line W is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line H is now recovered delays
+2023-08-09 16:26:11,010 - INFO - Line M is now recovered delays
+2023-08-09 16:57:05,154 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:57:17,800 - INFO - Line 3 is experiencing delays
+2023-08-09 16:57:17,802 - INFO - Line F is experiencing delays
+2023-08-09 16:57:17,802 - INFO - Line 2 is experiencing delays
+2023-08-09 16:57:17,803 - INFO - Line B is now recovered delays
+2023-08-09 16:57:17,804 - INFO - Line J is now recovered delays
+2023-08-09 16:57:17,804 - INFO - Line 7 is now recovered delays
+2023-08-09 16:57:17,804 - INFO - Line D is now recovered delays
+2023-08-09 16:57:17,804 - INFO - Line Z is now recovered delays
+2023-08-09 16:57:17,804 - INFO - Line N is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line 6 is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line M is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line W is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line G is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line SI is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line 5 is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line FS is now recovered delays
+2023-08-09 16:57:17,809 - INFO - Line 4 is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line R is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line 1 is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line E is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line Q is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line GS is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line L is now recovered delays
+2023-08-09 16:57:17,810 - INFO - Line H is now recovered delays
+2023-08-09 16:57:17,811 - INFO - Line C is now recovered delays
+2023-08-09 16:57:17,811 - INFO - Line A is now recovered delays
+2023-08-09 16:58:36,246 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 16:58:47,282 - INFO - Line 3 is experiencing delays
+2023-08-09 16:58:47,283 - INFO - Line F is experiencing delays
+2023-08-09 16:58:47,283 - INFO - Line 2 is experiencing delays
+2023-08-09 16:58:47,283 - INFO - Line B is now recovered delays
+2023-08-09 16:58:47,283 - INFO - Line J is now recovered delays
+2023-08-09 16:58:47,283 - INFO - Line D is now recovered delays
+2023-08-09 16:58:47,283 - INFO - Line Z is now recovered delays
+2023-08-09 16:58:47,283 - INFO - Line 7 is now recovered delays
+2023-08-09 16:58:47,283 - INFO - Line N is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line L is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line 1 is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line 6 is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line R is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line G is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line A is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line W is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line H is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line SI is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line GS is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line 5 is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line E is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line 4 is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line Q is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line M is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line FS is now recovered delays
+2023-08-09 16:58:47,288 - INFO - Line C is now recovered delays
+2023-08-09 16:59:19,182 - ERROR - Exception on /uptime/F [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 124, in user_profile
+    return "Line has not been delayed for " + (1 - (delaySet[lineName] / (time.time() - start_time))) * 100 + "% of the time"
+TypeError: can only concatenate str (not "float") to str
+2023-08-09 16:59:19,190 - INFO - 127.0.0.1 - - [09/Aug/2023 16:59:19] "[35m[1mGET /uptime/F HTTP/1.1[0m" 500 -
+2023-08-09 16:59:20,068 - INFO - 127.0.0.1 - - [09/Aug/2023 16:59:20] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 16:59:23,628 - ERROR - Exception on /uptime/F [GET]
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Library/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "MtaApiCall.py", line 124, in user_profile
+    return "Line has not been delayed for " + (1 - (delaySet[lineName] / (time.time() - start_time))) * 100 + "% of the time"
+TypeError: can only concatenate str (not "float") to str
+2023-08-09 16:59:23,640 - INFO - 127.0.0.1 - - [09/Aug/2023 16:59:23] "[35m[1mGET /uptime/F HTTP/1.1[0m" 500 -
+2023-08-09 16:59:23,974 - INFO - 127.0.0.1 - - [09/Aug/2023 16:59:23] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:03:02,583 - INFO - 127.0.0.1 - - [09/Aug/2023 17:03:02] "GET /status/F HTTP/1.1" 200 -
+2023-08-09 17:03:03,048 - INFO - 127.0.0.1 - - [09/Aug/2023 17:03:03] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:03:09,410 - INFO - 127.0.0.1 - - [09/Aug/2023 17:03:09] "GET /status/5 HTTP/1.1" 200 -
+2023-08-09 17:03:09,757 - INFO - 127.0.0.1 - - [09/Aug/2023 17:03:09] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:38:11,753 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 17:39:17,847 - INFO -  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2023-08-09 17:39:29,582 - INFO - Line W is experiencing delays
+2023-08-09 17:39:29,583 - INFO - Line N is experiencing delays
+2023-08-09 17:39:29,583 - INFO - Line 5 is experiencing delays
+2023-08-09 17:39:29,583 - INFO - Line 4 is experiencing delays
+2023-08-09 17:39:29,583 - INFO - Line F is experiencing delays
+2023-08-09 17:39:29,583 - INFO - Line L is experiencing delays
+2023-08-09 17:39:29,584 - INFO - Line R is experiencing delays
+2023-08-09 17:39:29,584 - INFO - Line B is now recovered
+2023-08-09 17:39:29,584 - INFO - Line Z is now recovered
+2023-08-09 17:39:29,584 - INFO - Line 7 is now recovered
+2023-08-09 17:39:29,584 - INFO - Line D is now recovered
+2023-08-09 17:39:29,584 - INFO - Line J is now recovered
+2023-08-09 17:39:29,588 - INFO - Line C is now recovered
+2023-08-09 17:39:29,588 - INFO - Line E is now recovered
+2023-08-09 17:39:29,588 - INFO - Line 2 is now recovered
+2023-08-09 17:39:29,588 - INFO - Line 1 is now recovered
+2023-08-09 17:39:29,588 - INFO - Line 6 is now recovered
+2023-08-09 17:39:29,588 - INFO - Line 3 is now recovered
+2023-08-09 17:39:29,588 - INFO - Line M is now recovered
+2023-08-09 17:39:29,588 - INFO - Line H is now recovered
+2023-08-09 17:39:29,588 - INFO - Line GS is now recovered
+2023-08-09 17:39:29,588 - INFO - Line G is now recovered
+2023-08-09 17:39:29,588 - INFO - Line Q is now recovered
+2023-08-09 17:39:29,588 - INFO - Line SI is now recovered
+2023-08-09 17:39:29,588 - INFO - Line A is now recovered
+2023-08-09 17:39:29,588 - INFO - Line FS is now recovered
+2023-08-09 17:40:47,065 - INFO - 127.0.0.1 - - [09/Aug/2023 17:40:47] "GET /uptime/F HTTP/1.1" 200 -
+2023-08-09 17:40:47,934 - INFO - 127.0.0.1 - - [09/Aug/2023 17:40:47] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:40:59,518 - INFO - 127.0.0.1 - - [09/Aug/2023 17:40:59] "GET /uptime/F HTTP/1.1" 200 -
+2023-08-09 17:40:59,864 - INFO - 127.0.0.1 - - [09/Aug/2023 17:40:59] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:41:16,012 - INFO - 127.0.0.1 - - [09/Aug/2023 17:41:16] "GET /status/F HTTP/1.1" 200 -
+2023-08-09 17:41:16,344 - INFO - 127.0.0.1 - - [09/Aug/2023 17:41:16] "[33mGET /cart.json HTTP/1.1[0m" 404 -
+2023-08-09 17:41:26,641 - INFO - 127.0.0.1 - - [09/Aug/2023 17:41:26] "GET /status/W HTTP/1.1" 200 -
+2023-08-09 17:41:27,004 - INFO - 127.0.0.1 - - [09/Aug/2023 17:41:27] "[33mGET /cart.json HTTP/1.1[0m" 404 -
