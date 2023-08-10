@@ -33,21 +33,22 @@ thread_terminate_flags = {}
 
 
 delaySet = {}
-
 notDelaySet = set()
 
+# initiate scraping for specified URL
 def scrape_website():
     driver.get(URL)
     html_content = driver.page_source
     return soup_work(html_content)
 
+# keeps track of how many seconds a subway line has been in the DelaySet
 def track_time(element):
     while True:
         if element in delaySet:
             delaySet[element] += 1
             time.sleep(1)
             
-
+# adds the thread for a subway line when added to DelaySet
 def add_element(element):
     if element not in delaySet:
         delaySet[element] = 0
@@ -56,6 +57,7 @@ def add_element(element):
         threadDict[element] = thread
         thread.start()
 
+# eliminates the thread for a subway line when removed from DelaySet
 def terminate_thread(element):
     if element in thread_terminate_flags:
         thread_terminate_flags[element].set()
@@ -63,6 +65,10 @@ def terminate_thread(element):
         del thread_terminate_flags[element]
         del threadDict[element]
 
+# finds the subway lines on the NJT site and what categories they fall into
+# Adds lines that aren't in delay set but fall under the delay category to the delay set
+# Adds lines that aren't in the non-delay set but fall under the non-delay category to the non-delay set 
+# Logs info from non-delay --> delay and delay --> non-delay transition
 def soup_work(res):
     soup = BeautifulSoup(res, 'html.parser')
 
@@ -102,6 +108,7 @@ def soup_work(res):
             logging.info('Line %s is now recovered', element)
     return 
 
+# starts running the thread that accesses the site to look for the subway lines
 def background_task():
     while True:
         print("Background task is running... ")
@@ -113,12 +120,12 @@ def background_task():
 backgroundThread = threading.Thread(target=background_task)
 backgroundThread.start()
 
-
+# tells whether a subway line is delayed or not
 @app.route('/status/<lineName>')
 def getStatus(lineName):
     return "Line " + lineName + " is Delayed " + str(lineName in delaySet)
 
-# Define a route with dynamic parameters
+# Get the total uptime for a subawy line
 @app.route('/uptime/<lineName>')
 def user_profile(lineName):
     if lineName not in delaySet:
@@ -128,3 +135,4 @@ def user_profile(lineName):
 
 if __name__ == '__main__':
     app.run()
+
