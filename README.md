@@ -1,6 +1,4 @@
 # MTA Data Analysis Service
- - [Specification](#specification) 
- - [Dependencies Title](#dependencies-title) 
 
 ## Purpose
 1. The main purpose of the MtaApiCall.py file is to run a thread which keeps track of which subway lines transition from a Delay --> Non-Delay status and which subway lines transition from a Non-Delay --> Delay status
